@@ -1,0 +1,25 @@
+<br>
+<br>
+<form [formGroup]="formData" (ngSubmit)="onClickSubmit()">
+  <div class="form-horizontal">
+
+   
+    <div>
+      <h4>UserStory</h4>
+      <hr />
+      <dl class="dl-horizontal">
+        <dt>User Story</dt>
+
+        <dd>{{story.story}}</dd>
+
+        <dt>Project Id</dt>
+
+        <dd>{{story.projId}}</dd>
+      </dl>
+    </div>
+    <p>
+      <input type="submit" value="Delete" class="btn btn-default" />  |
+      <a href="/userstory">Back to List</a>
+    </p>
+  </div>
+</form>

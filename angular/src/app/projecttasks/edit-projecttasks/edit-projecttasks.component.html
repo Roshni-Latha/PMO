@@ -1,0 +1,59 @@
+<br>
+<br>
+<form [formGroup]="formData" (ngSubmit)="onClickSubmit(formData.value)">
+  <div class="form-horizontal">
+
+    <h4>Edit Project</h4>
+    <hr />
+
+    <div class="form-group">
+      <label class="control-label col-md-2" for="startDate">Start Date</label>
+      <div class="col-md-10">
+        <input class="form-control text-box single-line" id="startDate" formControlName="startDate" name="startDate" type="text" value="" />
+        <span class="field-validation-valid text-danger" data-valmsg-for="startDate" data-valmsg-replace="true"></span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-md-2" for="endDate">End Date</label>
+      <div class="col-md-10">
+        <input class="form-control text-box single-line" id="endDate" formControlName="endDate" name="endDate" type="text" value="" />
+        <span class="field-validation-valid text-danger" data-valmsg-for="endDate" data-valmsg-replace="true"></span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-md-2" for="completion">Completion Date</label>
+      <div class="col-md-10">
+        <input class="form-control text-box single-line" id="completion" formControlName="completion" name="completion" type="text" value="" />
+        <span class="field-validation-valid text-danger" data-valmsg-for="completion" data-valmsg-replace="true"></span>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2" for="empId">Employee Id</label>
+        <div class="col-md-10">
+          <input class="form-control text-box single-line" id="empId" formControlName="empId" name="empId" type="text" value="" />
+          <span class="field-validation-valid text-danger" data-valmsg-for="empId" data-valmsg-replace="true"></span>
+        </div>
+      </div>
+
+    <div class="form-group">
+         <label class="control-label col-md-2" for="userStoryId">UserStory Id</label>
+         <div class="col-md-10">
+            <input class="form-control text-box single-line" id="userStoryId" formControlName="userStoryId" name="userStoryId" type="text" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="userStoryId" data-valmsg-replace="true"></span>
+          </div>
+        </div> 
+
+
+    <div class="form-group">
+      <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Update" class="btn btn-default" />
+      </div>
+    </div>
+  </div>
+</form>
+<div>
+  <a href="/projecttask/show">Back to List</a>
+</div>

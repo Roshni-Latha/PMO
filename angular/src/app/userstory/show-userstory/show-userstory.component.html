@@ -1,0 +1,21 @@
+<br>
+<br>
+<h2><b>USERSTORIES</b></h2>
+<p><a href="/userstory/create">Create New</a></p>
+  <table class="table">
+    <tr>
+      <th>userStoryId</th>
+      <th>story</th>
+      <th>Project Id</th>
+    </tr>
+    <tr *ngFor="let story of stories">
+      <td>{{story.userStoryId}}</td>
+      <td>{{story.story}}</td>
+      <td>{{story.projId}}</td>
+      <td>
+        <a href="/userstory/edit/{{story.userStoryId}}">Edit </a>  |
+        <a href="/userstory/view/{{story.userStoryId}}">View </a> |
+        <a href="/userstory/delete/{{story.userStoryId}}">Delete </a>  |
+      </td>
+    </tr>
+  </table>
